@@ -1,0 +1,183 @@
+/* BASE */
+
+* { 
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", sans-serif;
+}
+
+/* NAVIGATION */
+
+header {
+  background-color: #B4D9C4; 
+  border-bottom: 2px solid #181211;
+}
+
+.container-nav { /* FLEXBOX */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 12px 40px;
+}
+
+.container-nav a {
+    color: #181211;
+    text-decoration: none; /* enlève le soulignement */
+    font-weight: 600;
+    text-transform: uppercase; /*Majuscule*/
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.container-nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN */
+
+main {
+    display: flex; /* FLEXBOX */ 
+    flex-direction: column;
+    gap: 2rem;
+    padding: 40px 60px; 
+}
+
+/* BOX */
+
+.box {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    border: 2px solid #181411;
+    box-shadow: 6px 6px 0 #181211;
+
+    transition: all 0.2s ease-in-out; /* */
+}
+
+.box:hover { /* hover = survoler, Cela définit ce qu'il va se passer quand l'utilisateur passe la souris sur un élément comme un lien ou un bouton.*/ 
+  transform: translateY(8px); /* Modifie l'espace des coordonnées */
+  box-shadow: 8px 8px 0 #181211; /* Ombre porté en x, y et z, valeur positive en x=droite, y=bas*/
+}
+
+/* BOX HEADER */
+
+.box-header {
+    background-color: #EECE93;
+    border-bottom: 2px solid #181211;
+    padding: 10px 20px;
+}
+
+.box-header h2 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+/* BOX CONTENT */ 
+
+.box-content {
+    background-color: #F2EBDF;
+    padding: 30px;
+}
+
+.box-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.box-content p {
+    margin-bottom: 16px;
+}
+
+/* FORMULAIRE */
+
+.form input[type="text"],
+.form input[type="email"] {
+    border: 2px solid #181211;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.form input[type="submit"] {
+    background-color: #B4D9C4;
+    border: 2px solid #181211;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 600; /* indique la graisse de la typographie */
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #EECE93;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  border-top: 2px solid #181211; 
+  background-color: #B4D9C4;
+}
+
+/* AUTRES */
+
+.logo {
+  height: 40px; /* ajustes selon la dimension mise */
+  width: auto;  /* garde les proportions */
+}   
+
+/* RESPONSIVE */ 
+
+@media (max-width: 900px) { /*Responsive ≤ 900 */
+    main {
+        padding: 20px;
+        gap: 1.5rem;
+    }
+
+    .container-nav {
+        justify-content: center;
+        padding: 10px 20px;
+        gap: 1rem;
+    }
+
+    .box-content {
+        padding: 20px;
+    }
+
+    .box-header h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) { /*Responsive ≤ 600*/
+    body {
+        font-size: 0.9rem;
+    }
+
+    .container-nav {
+      flex-wrap: wrap
+    }
+
+    .box-content {
+        padding: 16px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+        .logo {
+        height: 32px;
+    }
+    
+  }

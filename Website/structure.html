@@ -1,0 +1,95 @@
+    <html>
+        <head> 
+            <title> PORTFOLIO </title> 
+            <link rel="stylesheet" href="interface.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+
+        <body>
+
+    <!-- HEADER -->
+
+            <header> 
+                <nav class="container-nav">
+                    <a href="#page-1"><img src="image/perso.png" alt="Home" class="logo"></a>
+                    <a href="#page-2">Formation</a>
+                    <a href="#page-3">Project</a>
+                    <a href="#page-4">Service</a>
+                    <a href="#page-5">Formulaire</a>
+                </nav>
+            </header>
+
+    <!-- MAIN -->
+
+            <main> 
+                <section class="box" id="page-1"><!-- première étage de boite-->
+                    <div class="box-header"> <!--deuxième étage de boite-->
+                        <h2>Profil</h2> 
+                    </div>
+                    <div class="box-content">
+                        <h3>JAMIS Noémy</h3>
+                        <p>Etudiante</p>
+                    </div>
+                </section>
+
+                <section class="box" id="page-2">
+                    <div class="box-header">
+                        <h2> FORMATION </h2>
+                    </div>
+                    <div class="box-content">
+                        <p><strong> LORITZ </strong>: Lycée Générale & Technologique <br>
+                            Baccalauréat Général </p><br>
+                        <p><strong> EPITECH </strong> : Ecole Supérieur d'informatique <br>
+                            Bachelor Informatique</p>
+                    </div>
+                </section>
+
+                <section class="box" id="page-3">
+                    <div class="box-header">
+                        <h2>Projets</h2>
+                    </div>
+                    <div class="box-content">
+                        <p>Projets réalisés : intégrations front-end, 
+                            maquettes responsives et mini-jeux python.</p>
+                    </div>
+                </section>
+
+                <section class="box" id="page-4"> 
+                    <div class="box-header">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="box-content">
+                        <ul>
+                            <li>Création de sites vitrines</li>
+                            <li>Design UI/UX</li>
+                            <li>Animation CSS</li>
+                            <li>Optimisation mobile</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="box" id="page-5">
+                    <div class="box-header">
+                        <h2>Formulaire</h2>
+                    </div>
+                    <div class="box-content">
+                        <form class="form">
+                            <label for="fname">Prénom</label><br>
+                            <input type="text" id="fname" name="fname" required ><br><br>
+                            <label for="lname">Nom</label><br>
+                            <input type="text" id="lname" name="lname" required ><br><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" required ><br><br>
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                </section>
+            </main>
+
+    <!-- FOOTER -->
+
+            <footer> 
+                <p> © 2025 · An Epitech Project · Created by Noémy </p>
+            </footer>
+        </body>
+    </html>
